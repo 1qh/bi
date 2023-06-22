@@ -1,0 +1,8 @@
+X - chuỗi kd cà phê có trụ sở tại Mỹ & nhiều chi nhánh trên thế giới. Bạn được cung cấp các bộ dữ liệu thô dưới dạng .csv về lịch sử bán hàng & các thông tin khác như cửa hàng, KH, NV & sản phẩm cty đang kd. Sử dụng kỹ năng & tư duy phân tích, giúp X trả lời được các câu hỏi xoay quanh các hoạt động kd của cty cũng như đưa ra các đề xuất hợp lý để X có những quyết định kịp thời & chính xác.
+
+1. Xác định & mô tả mối quan hệ giữa các bảng dữ liệu trong bộ dataset
+1. CEO muốn hiểu rõ về tệp KH của cty (VD: độ tuổi trung bình, giới tính…)
+1. CFO sắp họp với Ban quản trị để thảo luận về 1 số thay đổi cho tập đoàn & cần bạn cung cấp 1 bức tranh tổng quan về tình hình kd 6 tháng gần nhất. Hãy đưa ra các chỉ số phân tích về doanh thu, lợi nhuận, biên lợi nhuận, tỷ lệ phần trăm đóng góp doanh thu & lợi nhuận của mỗi cửa hàng trên tổng doanh thu.
+1. 1 trong những chiến lược trọng điểm thời gian tới là cải thiện & nâng cao trải nghiệm mua sắm của KH, đẩy mạnh số lượng KH mới & tăng tỷ lệ giữ chân KH cũ. Sử dụng kỹ năng phân tích để tính toán & phân chia các tệp KH mới & KH trung thành thông qua lịch sử mua hàng.
+1. Giúp X tính tổng doanh thu & doanh thu trung bình của mỗi NV trong Q1 năm 2021, từ đó so sánh con số này với Q1 năm 2022. Giả sử mỗi NV được thưởng 5% hoa hồng trên mỗi đơn hàng bán được thì số tiền hoa hồng mà mỗi NV đã nhận là bao nhiêu, người có hoa hồng cao nhất của mỗi Quý ở trên đóng góp bao nhiêu % doanh số cho toàn bộ doanh thu của X?
+1. Từ những phân tích ở C3 & C4, hãy đưa ra những nhận định của bạn về tình hình kd. Chọn ra tối đa 3 insights tâm đắc nhất từ các phân tích trên & làm rõ. Hãy đưa ra các đề xuất giúp X cải thiện tình hình kd thông qua các insights đó
