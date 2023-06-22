@@ -1,5 +1,4 @@
 from polars import (
-    DataFrame,
     Date,
     Datetime,
     Float64,
@@ -8,25 +7,11 @@ from polars import (
     col,
     concat,
     concat_str,
-    count,
     read_csv,
     when,
 )
 
-
-def overview(df: DataFrame):
-    print(df)
-    print(df.describe())
-    print(df.glimpse())
-
-
-def export(df: DataFrame, path: str):
-    df.write_csv(path)
-    assert read_csv(
-        path,
-        use_pyarrow=True,
-    ).frame_equal(df)
-
+from utils import export
 
 sales = (
     concat(
@@ -120,11 +105,17 @@ b2b_total_by_order = (
     b2b.with_columns(
         (col('quantity') * col('price')).alias('total'),
     )
-    .groupby('id', maintain_order=True)
+    .groupby(
+        'id',
+        'time',
+        maintain_order=True,
+    )
     .sum()
     .select(
-        col('id'),
+        'id',
+        'quantity',
         col('total').round(2),
+        'time',
     )
     .sort('id')
 )
@@ -180,11 +171,17 @@ b2c_total_by_order = (
     b2c.with_columns(
         (col('quantity') * col('price')).alias('total'),
     )
-    .groupby('id', maintain_order=True)
+    .groupby(
+        'id',
+        'time',
+        maintain_order=True,
+    )
     .sum()
     .select(
-        col('id'),
+        'id',
+        'quantity',
         col('total').round(2),
+        'time',
     )
     .sort('id')
 )
@@ -278,7 +275,6 @@ store = (
         use_pyarrow=True,
     )
     .drop(
-        'store_address',
         'store_city',
         'store_state_province',
         'store_postal_code',
@@ -287,6 +283,7 @@ store = (
     .rename(
         {
             'store_id': 'id',
+            'store_address': 'address',
             'store_type': 'type',
             'store_square_feet': 'square_feet',
             'store_longitude': 'longitude',
