@@ -2,32 +2,25 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from folium import Map, Marker
+from folium import Icon, Map, Marker
 from plotly.graph_objects import Figure
 from polars import read_csv
 from streamlit import sidebar as sb
+from streamlit.delta_generator import DeltaGenerator
 from streamlit_folium import st_folium as map
 
 
-def dis(f: Figure, sidebar=False):
-    if sidebar:
-        sb.plotly_chart(
-            f.update_layout(
-                margin=dict(l=0, r=0, b=0, t=0),
-            ),
-            use_container_width=True,
-        )
-    else:
-        st.plotly_chart(
-            f.update_layout(
-                margin=dict(l=0, r=0, b=0, t=0),
-            ),
-            use_container_width=True,
-        )
+def dis(f: Figure, place: DeltaGenerator = st):
+    place.plotly_chart(
+        f.update_layout(
+            margin=dict(l=0, r=0, b=0, t=0),
+        ),
+        use_container_width=True,
+    )
 
 
-def rangeslider(f: Figure):
-    st.plotly_chart(
+def rangeslider(f: Figure, place: DeltaGenerator = st):
+    place.plotly_chart(
         f.update_xaxes(
             rangeslider_visible=True,
             rangeselector=dict(
@@ -151,6 +144,11 @@ if page == 'Exploratory Data Analysis':
                     d[i]['longitude'],
                 ],
                 tooltip=d[i]['address'] + f' ({d[i]["count"]} customers)',
+                icon=Icon(
+                    color='green',
+                    icon='coffee',
+                    prefix='fa',
+                ),
             ).add_to(m)
         map(
             m,
@@ -160,28 +158,55 @@ if page == 'Exploratory Data Analysis':
 
     if view == 'Time view':
         st.header('Time view')
-
         order_by_date = read_csv('b2c/order_by_date.csv')
+        order_by_month = read_csv('b2c/order_by_month.csv')
 
-        st.subheader('Quantity sold by date')
+        line_shape = 'spline' if st.checkbox('Curve', value=True) else 'linear'
+        t1, t2 = st.tabs(['By date', 'By month'])
+
+        t1.subheader('Quantity sold by date')
         rangeslider(
             px.line(
                 order_by_date,
                 x='date',
                 y='quantity',
                 height=700,
-                line_shape='spline',
-            )
+                line_shape=line_shape,
+            ),
+            t1,
         )
-        st.subheader('Sales by date')
+        t1.subheader('Sales by date')
         rangeslider(
             px.line(
                 order_by_date,
                 x='date',
                 y='total',
                 height=700,
-                line_shape='spline',
-            )
+                line_shape=line_shape,
+            ),
+            t1,
+        )
+        t2.subheader('Quantity sold by month')
+        rangeslider(
+            px.line(
+                order_by_month,
+                x='month',
+                y='quantity',
+                height=700,
+                line_shape=line_shape,
+            ),
+            t2,
+        )
+        t2.subheader('Sales by month')
+        rangeslider(
+            px.line(
+                order_by_month,
+                x='month',
+                y='total',
+                height=700,
+                line_shape=line_shape,
+            ),
+            t2,
         )
 
 if page == 'RFM Analysis':
