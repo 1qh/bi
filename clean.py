@@ -9,6 +9,7 @@ from polars import (
     concat,
     concat_str,
     date,
+    lit,
     read_csv,
     when,
 )
@@ -386,6 +387,10 @@ def total_by_product(df: DataFrame, out: str) -> DataFrame:
             left_on='product_id',
             right_on='id',
         )
+        .drop(
+            'is_promo',
+            'is_new',
+        )  # 100% not promo and not new
         .sort('product_id')
     )
     export(new, out)
@@ -424,3 +429,41 @@ def total_by_customer(df: DataFrame, out: str) -> DataFrame:
 
 b2b_total_by_customer = total_by_customer(b2b, 'b2b/total_by_customer.csv')
 b2c_total_by_customer = total_by_customer(b2c, 'b2c/total_by_customer.csv')
+
+
+def total_by_store(df: DataFrame, out: str) -> DataFrame:
+    new = (
+        df.with_columns(
+            (col('quantity') * col('price')).alias('total'),
+        )
+        .groupby(
+            'store_id',
+            'customer_id',
+            maintain_order=True,
+        )
+        .sum()
+        .with_columns(lit(1).alias('customers'))
+        .groupby(
+            'store_id',
+            maintain_order=True,
+        )
+        .sum()
+        .select(
+            'store_id',
+            'quantity',
+            col('total').round(2),
+            'customers',
+        )
+        .join(
+            store,
+            left_on='store_id',
+            right_on='id',
+        )
+        .sort('store_id')
+    )
+    export(new, out)
+    return new
+
+
+b2b_total_by_store = total_by_store(b2b, 'b2b/total_by_store.csv')
+b2c_total_by_store = total_by_store(b2c, 'b2c/total_by_store.csv')

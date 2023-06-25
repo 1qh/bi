@@ -1,81 +1,81 @@
-product_id,quantity,total,group,category,type,name,unit,cost,wholesale,retail,is_tax_exempt,is_promo,is_new
-1,473,8514.0,Whole Bean/Teas,Coffee beans,Organic Beans,Brazilian - Organic,12 oz,3.6,14.4,18.0,true,false,false
-2,465,8370.0,Whole Bean/Teas,Coffee beans,House blend Beans,Our Old Time Diner Blend,12 oz,3.6,14.4,18.0,true,false,false
-3,419,6180.25,Whole Bean/Teas,Coffee beans,Espresso Beans,Espresso Roast,1 lb,2.95,11.8,14.75,true,false,false
-4,339,6932.55,Whole Bean/Teas,Coffee beans,Espresso Beans,Primo Espresso Roast,1 lb,4.09,16.36,20.45,true,false,false
-5,354,5310.0,Whole Bean/Teas,Coffee beans,Gourmet Beans,Columbian Medium Roast,1 lb,3.0,12.0,15.0,true,false,false
-6,533,11193.0,Whole Bean/Teas,Coffee beans,Gourmet Beans,Ethiopia,1 lb,4.2,16.8,21.0,true,false,false
-7,290,5727.5,Whole Bean/Teas,Coffee beans,Premium Beans,Jamacian Coffee River,1 lb,3.95,15.8,19.75,true,false,false
-8,586,26370.0,Whole Bean/Teas,Coffee beans,Premium Beans,Civet Cat,.5 lb,9.0,36.0,45.0,true,false,false
-9,461,10676.0,Whole Bean/Teas,Coffee beans,Organic Beans,Organic Decaf Blend,1 lb,4.5,18.0,22.5,true,false,false
-10,333,3330.0,Whole Bean/Teas,Coffee beans,Green beans,Guatemalan Sustainably Grown,1 lb,2.0,8.0,10.0,true,false,false
-11,347,3105.65,Whole Bean/Teas,Loose Tea,Herbal tea,Lemon Grass,.9 oz,0.6,7.16,8.95,true,false,false
-12,333,2980.35,Whole Bean/Teas,Loose Tea,Herbal tea,Peppermint,.9 oz,0.6,7.16,8.95,true,false,false
-13,323,2890.85,Whole Bean/Teas,Loose Tea,Black tea,English Breakfast,.9 oz,0.6,7.16,8.95,true,false,false
-14,355,3177.25,Whole Bean/Teas,Loose Tea,Black tea,Earl Grey,.9 oz,0.6,7.16,8.95,true,false,false
-15,311,2876.75,Whole Bean/Teas,Loose Tea,Green tea,Serenity Green Tea,1 oz,0.9,7.4,9.25,true,false,false
-16,306,2738.7,Whole Bean/Teas,Loose Tea,Chai tea,Traditional Blend Chai,.9 oz,0.6,7.16,8.95,true,false,false
-17,423,4018.5,Whole Bean/Teas,Loose Tea,Chai tea,Morning Sunrise Chai,.9 oz,0.6,7.6,9.5,true,false,false
-18,338,3701.1,Whole Bean/Teas,Loose Tea,Chai tea,Spicy Eye Opener Chai,.9 oz,0.6,8.76,10.95,true,false,false
-19,161,1030.4,Whole Bean/Teas,Packaged Chocolate,Drinking Chocolate,Dark chocolate,1 lb,1.28,5.12,6.4,true,false,false
-20,428,3252.8,Whole Bean/Teas,Packaged Chocolate,Organic Chocolate,Sustainably Grown Organic,1 lb,1.52,6.08,7.6,true,false,false
-21,352,4692.16,Whole Bean/Teas,Packaged Chocolate,Drinking Chocolate,Chili Mayan,1 lb,2.666,10.66,13.33,true,false,false
-22,7655,15310.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Sm,8 oz,0.5,1.0,2.0,true,false,false
-23,7776,19440.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Rg,16 oz,0.625,1.25,2.5,true,false,false
-24,7853,23559.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Lg,24 oz,0.75,1.5,3.0,true,false,false
-25,7659,16849.8,Beverages,Coffee,Organic brewed coffee,Brazilian Sm,8 oz,0.55,1.1,2.2,true,false,false
-26,7909,23727.0,Beverages,Coffee,Organic brewed coffee,Brazilian Rg,16 oz,0.75,1.5,3.0,true,false,false
-27,7755,27142.5,Beverages,Coffee,Organic brewed coffee,Brazilian Lg,24 oz,0.875,1.75,3.5,true,false,false
-28,7607,15214.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Sm,8 oz,0.5,1.0,2.0,true,false,false
-29,7960,19900.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Rg,16 oz,0.625,1.25,2.5,true,false,false
-30,7801,23403.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Lg,24 oz,0.75,1.5,3.0,true,false,false
-31,8466,18625.2,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Sm,8 oz,0.55,1.1,2.2,true,false,false
-32,8404,25212.0,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Rg,16 oz,0.75,1.5,3.0,true,false,false
-33,7777,27219.5,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Lg,24 oz,0.875,1.75,3.5,true,false,false
-34,7001,17152.45,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Sm,8 oz,0.6125,1.225,2.45,true,false,false
-35,7215,22366.5,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Rg,16 oz,0.775,1.55,3.1,true,false,false
-36,8654,32452.5,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Lg,24 oz,0.9375,1.875,3.75,true,false,false
-37,7779,23337.0,Beverages,Coffee,Barista Espresso,Espresso shot,1.5 oz,0.75,1.5,3.0,true,false,false
-38,7959,29846.25,Beverages,Coffee,Barista Espresso,Latte,1.5 oz,0.9375,1.875,3.75,true,false,false
-39,8567,36409.75,Beverages,Coffee,Barista Espresso,Latte Rg,3.0 oz,1.0625,2.125,4.25,true,false,false
-40,8017,30063.75,Beverages,Coffee,Barista Espresso,Cappuccino,1.5 oz,0.9375,1.875,3.75,true,false,false
-41,8127,34539.75,Beverages,Coffee,Barista Espresso,Cappuccino Lg,3.0 oz,1.0625,2.125,4.25,true,false,false
-42,7580,18950.0,Beverages,Tea,Brewed herbal tea,Lemon Grass Rg,16 oz,0.625,1.25,2.5,true,false,false
-43,7377,22131.0,Beverages,Tea,Brewed herbal tea,Lemon Grass Lg,24 oz,0.75,1.5,3.0,true,false,false
-44,8356,20890.0,Beverages,Tea,Brewed herbal tea,Peppermint Rg,16 oz,0.625,1.25,2.5,true,false,false
-45,7989,23967.0,Beverages,Tea,Brewed herbal tea,Peppermint Lg,24 oz,0.75,1.5,3.0,true,false,false
-46,8111,20277.5,Beverages,Tea,Brewed Green tea,Serenity Green Tea Rg,16 oz,0.625,1.25,2.5,true,false,false
-47,6971,20913.0,Beverages,Tea,Brewed Green tea,Serenity Green Tea Lg,24 oz,0.75,1.5,3.0,true,false,false
-48,7105,17762.5,Beverages,Tea,Brewed Black tea,English Breakfast Rg,16 oz,0.625,1.25,2.5,true,false,false
-49,7508,22524.0,Beverages,Tea,Brewed Black tea,English Breakfast Lg,24 oz,0.75,1.5,3.0,true,false,false
-50,8424,21060.0,Beverages,Tea,Brewed Black tea,Earl Grey Rg,16 oz,0.625,1.25,2.5,true,false,false
-51,7833,23499.0,Beverages,Tea,Brewed Black tea,Earl Grey Lg,24 oz,0.75,1.5,3.0,true,false,false
-52,7721,19302.5,Beverages,Tea,Brewed Chai tea,Traditional Blend Chai Rg,16 oz,0.625,1.25,2.5,true,false,false
-53,7409,22227.0,Beverages,Tea,Brewed Chai tea,Traditional Blend Chai Lg,24 oz,0.75,1.5,3.0,true,false,false
-54,7882,19705.0,Beverages,Tea,Brewed Chai tea,Morning Sunrise Chai Rg,16 oz,0.625,1.25,2.5,true,false,false
-55,8060,32240.0,Beverages,Tea,Brewed Chai tea,Morning Sunrise Chai Lg,24 oz,1.0,2.0,4.0,true,false,false
-56,7200,18360.0,Beverages,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg,16 oz,0.6375,1.275,2.55,true,false,false
-57,7921,24555.1,Beverages,Tea,Brewed Chai tea,Spicy Eye Opener Chai Lg,24 oz,0.775,1.55,3.1,true,false,false
-58,7426,25991.0,Beverages,Drinking Chocolate,Hot chocolate,Dark chocolate Rg,12 oz,0.875,1.75,3.5,true,false,false
-59,8526,38367.0,Beverages,Drinking Chocolate,Hot chocolate,Dark chocolate Lg,16 oz,1.125,2.25,4.5,true,false,false
-60,7819,29321.25,Beverages,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Rg,12 oz,0.9375,1.875,3.75,true,false,false
-61,7994,37971.5,Beverages,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg,16 oz,1.1875,2.375,4.75,true,false,false
-63,6009,4807.2,Add-ons,Flavours,Regular syrup,Carmel syrup,pump,0.2,0.4,0.8,true,false,false
-64,5774,4619.2,Add-ons,Flavours,Regular syrup,Hazelnut syrup,pump,0.2,0.4,0.78,true,false,false
-65,6558,5246.4,Add-ons,Flavours,Sugar free syrup,Sugar Free Vanilla syrup,pump,0.2,0.4,0.82,true,false,false
-69,3669,11971.23,Food,Bakery,Biscotti,Hazelnut Biscotti,single,1.45,2.28,3.5,false,false,false
-70,3682,11990.8,Food,Bakery,Scone,Cranberry Scone,single,1.24,2.11,3.25,false,false,false
-71,5492,20647.64,Food,Bakery,Pastry,Chocolate Croissant,single,1.54,2.44,3.75,false,false,false
-72,6039,18934.32,Food,Bakery,Scone,Ginger Scone,single,1.24,2.11,3.25,false,false,false
-73,3612,13545.0,Food,Bakery,Pastry,Almond Croissant,single,1.54,2.44,3.75,false,false,false
-74,3295,11561.54,Food,Bakery,Biscotti,Ginger Biscotti,single,1.45,2.28,3.5,false,false,false
-75,3535,12420.9,Food,Bakery,Pastry,Croissant,single,1.24,2.11,3.25,false,false,false
-76,3586,12585.32,Food,Bakery,Biscotti,Chocolate Chip Biscotti,single,1.45,2.28,3.5,false,false,false
-77,3337,10011.0,Food,Bakery,Scone,Oatmeal Scone,single,0.89,1.95,3.0,false,false,false
-78,3638,16411.68,Food,Bakery,Scone,Scottish Cream Scone ,single,1.75,2.93,4.5,false,false,false
-79,3631,13637.87,Food,Bakery,Scone,Jumbo Savory Scone,single,1.33,2.44,3.75,false,false,false
-81,610,17080.0,Merchandise,Branded,Clothing,I Need My Bean! T-shirt,single,6.0,8.96,28.0,false,false,false
-82,520,6240.0,Merchandise,Branded,Housewares,I Need My Bean! Diner mug,single,2.0,3.84,12.0,false,false,false
-83,783,11133.0,Merchandise,Branded,Housewares,I Need My Bean! Latte cup,single,2.5,4.48,14.0,false,false,false
-84,6409,5127.2,Add-ons,Flavours,Regular syrup,Chocolate syrup,pump,0.2,0.3,0.76,true,false,false
-87,7470,19233.0,Beverages,Coffee,Barista Espresso,Ouro Brasileiro shot,1.5 oz,0.75,1.5,3.0,true,false,false
+product_id,quantity,total,group,category,type,name,unit,cost,wholesale,retail,is_tax_exempt
+1,473,8514.0,Whole Bean/Teas,Coffee beans,Organic Beans,Brazilian - Organic,12 oz,3.6,14.4,18.0,true
+2,465,8370.0,Whole Bean/Teas,Coffee beans,House blend Beans,Our Old Time Diner Blend,12 oz,3.6,14.4,18.0,true
+3,419,6180.25,Whole Bean/Teas,Coffee beans,Espresso Beans,Espresso Roast,1 lb,2.95,11.8,14.75,true
+4,339,6932.55,Whole Bean/Teas,Coffee beans,Espresso Beans,Primo Espresso Roast,1 lb,4.09,16.36,20.45,true
+5,354,5310.0,Whole Bean/Teas,Coffee beans,Gourmet Beans,Columbian Medium Roast,1 lb,3.0,12.0,15.0,true
+6,533,11193.0,Whole Bean/Teas,Coffee beans,Gourmet Beans,Ethiopia,1 lb,4.2,16.8,21.0,true
+7,290,5727.5,Whole Bean/Teas,Coffee beans,Premium Beans,Jamacian Coffee River,1 lb,3.95,15.8,19.75,true
+8,586,26370.0,Whole Bean/Teas,Coffee beans,Premium Beans,Civet Cat,.5 lb,9.0,36.0,45.0,true
+9,461,10676.0,Whole Bean/Teas,Coffee beans,Organic Beans,Organic Decaf Blend,1 lb,4.5,18.0,22.5,true
+10,333,3330.0,Whole Bean/Teas,Coffee beans,Green beans,Guatemalan Sustainably Grown,1 lb,2.0,8.0,10.0,true
+11,347,3105.65,Whole Bean/Teas,Loose Tea,Herbal tea,Lemon Grass,.9 oz,0.6,7.16,8.95,true
+12,333,2980.35,Whole Bean/Teas,Loose Tea,Herbal tea,Peppermint,.9 oz,0.6,7.16,8.95,true
+13,323,2890.85,Whole Bean/Teas,Loose Tea,Black tea,English Breakfast,.9 oz,0.6,7.16,8.95,true
+14,355,3177.25,Whole Bean/Teas,Loose Tea,Black tea,Earl Grey,.9 oz,0.6,7.16,8.95,true
+15,311,2876.75,Whole Bean/Teas,Loose Tea,Green tea,Serenity Green Tea,1 oz,0.9,7.4,9.25,true
+16,306,2738.7,Whole Bean/Teas,Loose Tea,Chai tea,Traditional Blend Chai,.9 oz,0.6,7.16,8.95,true
+17,423,4018.5,Whole Bean/Teas,Loose Tea,Chai tea,Morning Sunrise Chai,.9 oz,0.6,7.6,9.5,true
+18,338,3701.1,Whole Bean/Teas,Loose Tea,Chai tea,Spicy Eye Opener Chai,.9 oz,0.6,8.76,10.95,true
+19,161,1030.4,Whole Bean/Teas,Packaged Chocolate,Drinking Chocolate,Dark chocolate,1 lb,1.28,5.12,6.4,true
+20,428,3252.8,Whole Bean/Teas,Packaged Chocolate,Organic Chocolate,Sustainably Grown Organic,1 lb,1.52,6.08,7.6,true
+21,352,4692.16,Whole Bean/Teas,Packaged Chocolate,Drinking Chocolate,Chili Mayan,1 lb,2.666,10.66,13.33,true
+22,7655,15310.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Sm,8 oz,0.5,1.0,2.0,true
+23,7776,19440.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Rg,16 oz,0.625,1.25,2.5,true
+24,7853,23559.0,Beverages,Coffee,Drip coffee,Our Old Time Diner Blend Lg,24 oz,0.75,1.5,3.0,true
+25,7659,16849.8,Beverages,Coffee,Organic brewed coffee,Brazilian Sm,8 oz,0.55,1.1,2.2,true
+26,7909,23727.0,Beverages,Coffee,Organic brewed coffee,Brazilian Rg,16 oz,0.75,1.5,3.0,true
+27,7755,27142.5,Beverages,Coffee,Organic brewed coffee,Brazilian Lg,24 oz,0.875,1.75,3.5,true
+28,7607,15214.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Sm,8 oz,0.5,1.0,2.0,true
+29,7960,19900.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Rg,16 oz,0.625,1.25,2.5,true
+30,7801,23403.0,Beverages,Coffee,Gourmet brewed coffee,Columbian Medium Roast Lg,24 oz,0.75,1.5,3.0,true
+31,8466,18625.2,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Sm,8 oz,0.55,1.1,2.2,true
+32,8404,25212.0,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Rg,16 oz,0.75,1.5,3.0,true
+33,7777,27219.5,Beverages,Coffee,Gourmet brewed coffee,Ethiopia Lg,24 oz,0.875,1.75,3.5,true
+34,7001,17152.45,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Sm,8 oz,0.6125,1.225,2.45,true
+35,7215,22366.5,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Rg,16 oz,0.775,1.55,3.1,true
+36,8654,32452.5,Beverages,Coffee,Premium brewed coffee,Jamaican Coffee River Lg,24 oz,0.9375,1.875,3.75,true
+37,7779,23337.0,Beverages,Coffee,Barista Espresso,Espresso shot,1.5 oz,0.75,1.5,3.0,true
+38,7959,29846.25,Beverages,Coffee,Barista Espresso,Latte,1.5 oz,0.9375,1.875,3.75,true
+39,8567,36409.75,Beverages,Coffee,Barista Espresso,Latte Rg,3.0 oz,1.0625,2.125,4.25,true
+40,8017,30063.75,Beverages,Coffee,Barista Espresso,Cappuccino,1.5 oz,0.9375,1.875,3.75,true
+41,8127,34539.75,Beverages,Coffee,Barista Espresso,Cappuccino Lg,3.0 oz,1.0625,2.125,4.25,true
+42,7580,18950.0,Beverages,Tea,Brewed herbal tea,Lemon Grass Rg,16 oz,0.625,1.25,2.5,true
+43,7377,22131.0,Beverages,Tea,Brewed herbal tea,Lemon Grass Lg,24 oz,0.75,1.5,3.0,true
+44,8356,20890.0,Beverages,Tea,Brewed herbal tea,Peppermint Rg,16 oz,0.625,1.25,2.5,true
+45,7989,23967.0,Beverages,Tea,Brewed herbal tea,Peppermint Lg,24 oz,0.75,1.5,3.0,true
+46,8111,20277.5,Beverages,Tea,Brewed Green tea,Serenity Green Tea Rg,16 oz,0.625,1.25,2.5,true
+47,6971,20913.0,Beverages,Tea,Brewed Green tea,Serenity Green Tea Lg,24 oz,0.75,1.5,3.0,true
+48,7105,17762.5,Beverages,Tea,Brewed Black tea,English Breakfast Rg,16 oz,0.625,1.25,2.5,true
+49,7508,22524.0,Beverages,Tea,Brewed Black tea,English Breakfast Lg,24 oz,0.75,1.5,3.0,true
+50,8424,21060.0,Beverages,Tea,Brewed Black tea,Earl Grey Rg,16 oz,0.625,1.25,2.5,true
+51,7833,23499.0,Beverages,Tea,Brewed Black tea,Earl Grey Lg,24 oz,0.75,1.5,3.0,true
+52,7721,19302.5,Beverages,Tea,Brewed Chai tea,Traditional Blend Chai Rg,16 oz,0.625,1.25,2.5,true
+53,7409,22227.0,Beverages,Tea,Brewed Chai tea,Traditional Blend Chai Lg,24 oz,0.75,1.5,3.0,true
+54,7882,19705.0,Beverages,Tea,Brewed Chai tea,Morning Sunrise Chai Rg,16 oz,0.625,1.25,2.5,true
+55,8060,32240.0,Beverages,Tea,Brewed Chai tea,Morning Sunrise Chai Lg,24 oz,1.0,2.0,4.0,true
+56,7200,18360.0,Beverages,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg,16 oz,0.6375,1.275,2.55,true
+57,7921,24555.1,Beverages,Tea,Brewed Chai tea,Spicy Eye Opener Chai Lg,24 oz,0.775,1.55,3.1,true
+58,7426,25991.0,Beverages,Drinking Chocolate,Hot chocolate,Dark chocolate Rg,12 oz,0.875,1.75,3.5,true
+59,8526,38367.0,Beverages,Drinking Chocolate,Hot chocolate,Dark chocolate Lg,16 oz,1.125,2.25,4.5,true
+60,7819,29321.25,Beverages,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Rg,12 oz,0.9375,1.875,3.75,true
+61,7994,37971.5,Beverages,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg,16 oz,1.1875,2.375,4.75,true
+63,6009,4807.2,Add-ons,Flavours,Regular syrup,Carmel syrup,pump,0.2,0.4,0.8,true
+64,5774,4619.2,Add-ons,Flavours,Regular syrup,Hazelnut syrup,pump,0.2,0.4,0.78,true
+65,6558,5246.4,Add-ons,Flavours,Sugar free syrup,Sugar Free Vanilla syrup,pump,0.2,0.4,0.82,true
+69,3669,11971.23,Food,Bakery,Biscotti,Hazelnut Biscotti,single,1.45,2.28,3.5,false
+70,3682,11990.8,Food,Bakery,Scone,Cranberry Scone,single,1.24,2.11,3.25,false
+71,5492,20647.64,Food,Bakery,Pastry,Chocolate Croissant,single,1.54,2.44,3.75,false
+72,6039,18934.32,Food,Bakery,Scone,Ginger Scone,single,1.24,2.11,3.25,false
+73,3612,13545.0,Food,Bakery,Pastry,Almond Croissant,single,1.54,2.44,3.75,false
+74,3295,11561.54,Food,Bakery,Biscotti,Ginger Biscotti,single,1.45,2.28,3.5,false
+75,3535,12420.9,Food,Bakery,Pastry,Croissant,single,1.24,2.11,3.25,false
+76,3586,12585.32,Food,Bakery,Biscotti,Chocolate Chip Biscotti,single,1.45,2.28,3.5,false
+77,3337,10011.0,Food,Bakery,Scone,Oatmeal Scone,single,0.89,1.95,3.0,false
+78,3638,16411.68,Food,Bakery,Scone,Scottish Cream Scone ,single,1.75,2.93,4.5,false
+79,3631,13637.87,Food,Bakery,Scone,Jumbo Savory Scone,single,1.33,2.44,3.75,false
+81,610,17080.0,Merchandise,Branded,Clothing,I Need My Bean! T-shirt,single,6.0,8.96,28.0,false
+82,520,6240.0,Merchandise,Branded,Housewares,I Need My Bean! Diner mug,single,2.0,3.84,12.0,false
+83,783,11133.0,Merchandise,Branded,Housewares,I Need My Bean! Latte cup,single,2.5,4.48,14.0,false
+84,6409,5127.2,Add-ons,Flavours,Regular syrup,Chocolate syrup,pump,0.2,0.3,0.76,true
+87,7470,19233.0,Beverages,Coffee,Barista Espresso,Ouro Brasileiro shot,1.5 oz,0.75,1.5,3.0,true

@@ -1,0 +1,4 @@
+store_id,quantity,total,customers,type,square_feet,address,longitude,latitude,manager
+3,127709,428123.5,1,retail,1300,32-20 Broadway,-73.924008,40.761196,6
+5,127309,414628.68,1,retail,900,100 Church Street,-74.01013,40.71329,16
+8,143714,473303.23,1,retail,1500,687 9th Avenue,-73.990338,40.761887,31
