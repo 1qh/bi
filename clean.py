@@ -225,7 +225,6 @@ non_retail = (
     .count()
     .filter(col('count') > 1000)
 )
-export(non_retail, 'findings/non_retail.csv')
 
 b2b_sales = sales.filter(
     col('customer_id').is_in(non_retail['customer_id']),
@@ -269,6 +268,15 @@ def reid_sales(df: DataFrame, out: str) -> DataFrame:
 
 b2b = reid_sales(b2b_sales, 'b2b/sales.csv')
 b2c = reid_sales(b2c_sales, 'b2c/sales.csv')
+
+non_retail = (
+    b2b.groupby('id', 'customer_id', maintain_order=True)
+    .count()
+    .groupby('customer_id', maintain_order=True)
+    .count()
+    .sort('customer_id')
+)
+export(non_retail, 'findings/non_retail.csv')
 
 
 def total_by_order(df: DataFrame, out: str) -> DataFrame:
