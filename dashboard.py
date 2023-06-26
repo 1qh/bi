@@ -3,7 +3,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from folium import Icon, Map, Marker
-from plotly.graph_objects import Figure
+from plotly.graph_objects import Figure, Layout, layout
+from plotly.io import templates
 from polars import read_csv
 from streamlit import sidebar as sb
 from streamlit.delta_generator import DeltaGenerator
@@ -79,6 +80,15 @@ tbody th {display:none}
 """,
     unsafe_allow_html=True,
 )
+templates['custom'] = layout.Template(
+    layout=Layout(
+        colorway=[
+            '#118DFF',
+            '#E66C37',
+        ]
+    )
+)
+templates.default = 'custom+plotly_white'
 cf = sb.expander('Settings')
 nbins = cf.slider('Number of bins for histogram', 1, 1000, 50)
 curve = cf.checkbox('Curve for line chart', value=True)
@@ -236,6 +246,7 @@ if page == 'Exploratory Data Analysis':
             px.histogram(
                 total_by_customer,
                 x='quantity',
+                marginal='box',
             ),
             ex1,
         )
@@ -244,6 +255,7 @@ if page == 'Exploratory Data Analysis':
             px.histogram(
                 total_by_customer,
                 x='total',
+                marginal='box',
             ),
             ex1,
         )
@@ -262,6 +274,7 @@ if page == 'Exploratory Data Analysis':
             px.histogram(
                 total_by_customer,
                 x='age',
+                marginal='box',
             ),
             ex2,
         )
@@ -299,6 +312,7 @@ if page == 'Exploratory Data Analysis':
                 total_by_product,
                 x='quantity',
                 nbins=nbins,
+                marginal='box',
             ),
             ex1,
         )
@@ -308,6 +322,7 @@ if page == 'Exploratory Data Analysis':
                 total_by_product,
                 x='total',
                 nbins=nbins,
+                marginal='box',
             ),
             ex1,
         )
@@ -365,6 +380,7 @@ if page == 'Exploratory Data Analysis':
                 y='total',
                 color='group',
                 nbins=nbins,
+                marginal='box',
             ),
             ex3,
         )
